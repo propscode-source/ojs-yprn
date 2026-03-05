@@ -1,11 +1,9 @@
 FROM php:8.2-fpm
-
+ENV MAKEFLAGS="-j1"
 RUN apt-get update && apt-get install -y \
     libpq-dev \
     libzip-dev \
     libpng-dev \
-    libjpeg62-turbo-dev \
-    libfreetype6-dev \
     libxml2-dev \
     unzip \
     git
@@ -18,7 +16,6 @@ RUN docker-php-ext-install \
     pdo \
     pdo_pgsql \
     pgsql \
-    gd \
     mbstring \
     xml \
     zip \
