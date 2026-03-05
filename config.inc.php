@@ -60,9 +60,6 @@ port = 5432
 
 debug = Off
 
-upload_max_filesize = 100M
-post_max_size = 100M
-
 ;;;;;;;;;;;;;;;;;;
 ; Cache Settings ;
 ;;;;;;;;;;;;;;;;;;
@@ -75,12 +72,11 @@ path = cache/opcache
 web_cache = On
 web_cache_hours = 2
 
-[cache]
 object_cache = redis
 
 [redis]
-host = redis
-port = 6379
+host = redis-database-awk8c8ck8cg84wso00g4gokw
+port = 5432
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Localization Settings ;
