@@ -75,6 +75,12 @@ path = cache/opcache
 web_cache = On
 web_cache_hours = 2
 
+[cache]
+object_cache = redis
+
+[redis]
+host = redis
+port = 6379
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Localization Settings ;
