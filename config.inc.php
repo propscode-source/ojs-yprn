@@ -32,7 +32,7 @@ allow_url_fopen = On
 
 restful_urls = On
 
-allowed_hosts = '["ojs.domainanda.com"]'
+allowed_hosts = '["ojs.rimbanusantara.or.id"]'
 
 trust_x_forwarded_for = On
 
@@ -52,14 +52,16 @@ sandbox = Off
 [database]
 
 driver = postgres
-host = db
-username = ojs
-password = strongpassword
-name = ojs
+host = postgresql-database-yprn
+username = ojsadmin
+password = @2026-R1mb4@
+name = ojsyprn
 port = 5432
 
 debug = Off
 
+upload_max_filesize = 100M
+post_max_size = 100M
 
 ;;;;;;;;;;;;;;;;;;
 ; Cache Settings ;
@@ -174,7 +176,7 @@ results_per_keyword = 500
 
 oai = On
 
-repository_id = ojs.domainanda.com
+repository_id = ojs.rimbanusantara.or.id
 
 oai_max_records = 100
 
